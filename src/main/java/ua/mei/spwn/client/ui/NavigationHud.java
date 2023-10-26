@@ -3,9 +3,7 @@ package ua.mei.spwn.client.ui;
 import io.wispforest.owo.ui.container.*;
 import io.wispforest.owo.ui.core.*;
 import net.minecraft.client.*;
-import net.minecraft.client.gui.hud.*;
 import net.minecraft.client.network.*;
-import net.minecraft.server.dedicated.gui.*;
 import net.minecraft.world.*;
 import ua.mei.spwn.config.*;
 
