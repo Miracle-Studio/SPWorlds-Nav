@@ -12,10 +12,10 @@ public class SPWorldsNavConfig {
     public AlignEnum align = AlignEnum.CENTER;
 
     @ConfigEntry
-    public boolean showSpawn = false;
+    public boolean showInOverworld = false;
 
     @ConfigEntry
-    public boolean showInOverworld = false;
+    public boolean showSpawn = false;
 
     @ConfigEntry
     public boolean showInEnd = false;
