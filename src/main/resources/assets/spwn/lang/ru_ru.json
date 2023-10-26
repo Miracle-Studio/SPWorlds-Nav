@@ -1,0 +1,19 @@
+{
+  "hud.spwn.spawn": "Спавн",
+  "hud.spwn.yellow": "Желтая | ",
+  "hud.spwn.red": "Красная | ",
+  "hud.spwn.green": "Зеленая | ",
+  "hud.spwn.blue": "Голубая | ",
+
+  "config.spwn.category.main": "Главное",
+
+  "config.spwn.group.visual": "Визуал",
+
+  "config.spwn.visual.align.name": "Отображение",
+  "config.spwn.visual.show_spawn.name": "Отображать спавн",
+  "config.spwn.visual.show_in_overworld.name": "Отображать в верхнем мире",
+  "config.spwn.visual.show_in_end.name": "Отображать в энде",
+
+  "config.spwn.label.yes": "Да",
+  "config.spwn.label.no": "Нет"
+}

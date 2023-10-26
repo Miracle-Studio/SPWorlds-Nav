@@ -1,0 +1,19 @@
+{
+  "hud.spwn.spawn": "Spawn",
+  "hud.spwn.yellow": "Yellow | ",
+  "hud.spwn.red": "Red | ",
+  "hud.spwn.green": "Green | ",
+  "hud.spwn.blue": "Blue | ",
+
+  "config.spwn.category.main": "Main",
+
+  "config.spwn.group.visual": "Visual",
+
+  "config.spwn.visual.align.name": "Align",
+  "config.spwn.visual.show_spawn.name": "Show spawn",
+  "config.spwn.visual.show_in_overworld.name": "Show in overworld",
+  "config.spwn.visual.show_in_end.name": "Show in end",
+
+  "config.spwn.label.yes": "Yes",
+  "config.spwn.label.no": "No"
+}

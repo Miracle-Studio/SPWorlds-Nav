@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "spwn",
+  "version": "${version}",
+  "name": "SPWorlds Nav",
+  "description": "",
+  "authors": [
+    "MeiNanziiii"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Miracle-Studio/SPWorlds-Nav",
+    "sources": "https://github.com/Miracle-Studio/SPWorlds-Nav",
+    "issues": "https://github.com/Miracle-Studio/SPWorlds-Nav/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/spwn/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ua.mei.spwn.client.SPWorldsNavClient"
+    ],
+    "modmenu": [
+      "ua.mei.spwn.config.ModMenuIntegration"
+    ]
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/Jc4pqjQdBf",
+        "modmenu.github_releases": "https://github.com/Miracle-Studio/SPWorlds-Nav/releases",
+        "modmenu.modrinth": "https://modrinth.com/mod/spwn"
+      }
+    }
+  },
+  "mixins": [
+    "spwn.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20"
+  },
+  "suggests": {
+    "modmenu": ">=7.0.0"
+  }
+}
