@@ -1,9 +1,11 @@
 {
   "hud.spwn.spawn": "Spawn",
-  "hud.spwn.yellow": "Yellow | ",
-  "hud.spwn.red": "Red | ",
-  "hud.spwn.green": "Green | ",
-  "hud.spwn.blue": "Blue | ",
+  "hud.spwn.red": "Red",
+  "hud.spwn.green": "Green",
+  "hud.spwn.yellow": "Yellow",
+  "hud.spwn.cyan": "Cyan",
+
+  "hud.spwn.blue": "Blue",
 
   "config.spwn.category.main": "Main",
 

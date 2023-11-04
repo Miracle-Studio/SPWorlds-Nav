@@ -2,22 +2,9 @@ package ua.mei.spwn.client.ui;
 
 import io.wispforest.owo.ui.container.*;
 import io.wispforest.owo.ui.core.*;
-import net.minecraft.client.*;
-import net.minecraft.client.network.*;
-import net.minecraft.world.*;
-import ua.mei.spwn.config.*;
+import ua.mei.spwn.client.*;
 
 public class NavigationHud extends FlowLayout {
-    private Positioning getAlign() {
-        if (SPWorldsNavConfig.getConfig().align == AlignEnum.LEFT) {
-            return Positioning.relative(1, 2);
-        } else if (SPWorldsNavConfig.getConfig().align == AlignEnum.CENTER) {
-            return Positioning.relative(50, 2);
-        } else {
-            return Positioning.relative(99, 2);
-        }
-    }
-
     public NavigationHud() {
         super(Sizing.content(), Sizing.content(), Algorithm.VERTICAL);
         this.surface(SPWorldsNavComponents.BEDROCK_PANEL);
@@ -26,26 +13,17 @@ public class NavigationHud extends FlowLayout {
 
         this.zIndex(-10000);
 
-        this.updateLayout();
+        if (SPMath.showHud()) {
+            this.positioning(SPMath.getPositioning());
+        } else {
+            this.positioning(Positioning.relative(50, -10));
+        }
     }
 
     @Override
-    protected void updateLayout() {
-        super.updateLayout();
-
-        ClientPlayerEntity player = MinecraftClient.getInstance().player;
-        if (player != null) {
-            if (player.clientWorld.getRegistryKey() == World.OVERWORLD && !SPWorldsNavConfig.getConfig().showInOverworld) {
-                this.positioning(Positioning.relative(50, -5));
-            } else if (player.clientWorld.getRegistryKey() == World.END && !SPWorldsNavConfig.getConfig().showInEnd) {
-                this.positioning(Positioning.relative(50, -5));
-            } else if (MinecraftClient.getInstance().getCurrentServerEntry() == null) {
-                this.positioning(Positioning.relative(50, -5));
-            } else if (!MinecraftClient.getInstance().getCurrentServerEntry().address.equals("sp.spworlds.ru") && !MinecraftClient.getInstance().getCurrentServerEntry().address.equals("spm.spworlds.ru")) {
-                this.positioning(Positioning.relative(50, -5));
-            } else {
-                this.positioning(getAlign());
-            }
+    public void draw(OwoUIDrawContext context, int mouseX, int mouseY, float partialTicks, float delta) {
+        if (SPMath.showHud()) {
+            super.draw(context, mouseX, mouseY, partialTicks, delta);
         }
     }
 }

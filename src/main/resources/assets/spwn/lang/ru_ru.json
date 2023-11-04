@@ -1,9 +1,11 @@
 {
   "hud.spwn.spawn": "Спавн",
-  "hud.spwn.yellow": "Желтая | ",
-  "hud.spwn.red": "Красная | ",
-  "hud.spwn.green": "Зеленая | ",
-  "hud.spwn.blue": "Голубая | ",
+  "hud.spwn.red": "Красная",
+  "hud.spwn.green": "Зеленая",
+  "hud.spwn.yellow": "Желтая",
+  "hud.spwn.cyan": "Голубая",
+
+  "hud.spwn.blue": "Синяя",
 
   "config.spwn.category.main": "Главное",
 
