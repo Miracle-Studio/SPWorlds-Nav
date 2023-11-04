@@ -13,11 +13,7 @@ public class NavigationHud extends FlowLayout {
 
         this.zIndex(-10000);
 
-        if (SPMath.showHud()) {
-            this.positioning(SPMath.getPositioning());
-        } else {
-            this.positioning(Positioning.relative(50, -10));
-        }
+        this.positioning(SPMath.getPositioning());
     }
 
     @Override
