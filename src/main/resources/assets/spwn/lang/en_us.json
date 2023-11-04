@@ -1,9 +1,15 @@
 {
+  "gui.spwn.title.error": "⚠ Error ⚠",
+
+  "gui.spwn.description.join_server": "To open the navigator screen you need to be on the SP/SPm server",
+
   "hud.spwn.spawn": "Spawn",
-  "hud.spwn.yellow": "Yellow | ",
-  "hud.spwn.red": "Red | ",
-  "hud.spwn.green": "Green | ",
-  "hud.spwn.blue": "Blue | ",
+  "hud.spwn.red": "Red",
+  "hud.spwn.green": "Green",
+  "hud.spwn.yellow": "Yellow",
+  "hud.spwn.cyan": "Cyan",
+
+  "hud.spwn.blue": "Blue",
 
   "config.spwn.category.main": "Main",
 
@@ -15,5 +21,7 @@
   "config.spwn.visual.show_in_end.name": "Show in end",
 
   "config.spwn.label.yes": "Yes",
-  "config.spwn.label.no": "No"
+  "config.spwn.label.no": "No",
+
+  "key.spwn.open_navigator_screen": "Open navigator screen"
 }

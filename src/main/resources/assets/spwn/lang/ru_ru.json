@@ -1,9 +1,15 @@
 {
+  "gui.spwn.title.error": "⚠ Ошибка ⚠",
+
+  "gui.spwn.description.join_server": "Чтобы открыть окно навигатора вам нужно находится на сервере СП/СПм",
+
   "hud.spwn.spawn": "Спавн",
-  "hud.spwn.yellow": "Желтая | ",
-  "hud.spwn.red": "Красная | ",
-  "hud.spwn.green": "Зеленая | ",
-  "hud.spwn.blue": "Голубая | ",
+  "hud.spwn.red": "Красная",
+  "hud.spwn.green": "Зеленая",
+  "hud.spwn.yellow": "Желтая",
+  "hud.spwn.cyan": "Голубая",
+
+  "hud.spwn.blue": "Синяя",
 
   "config.spwn.category.main": "Главное",
 
@@ -15,5 +21,7 @@
   "config.spwn.visual.show_in_end.name": "Отображать в энде",
 
   "config.spwn.label.yes": "Да",
-  "config.spwn.label.no": "Нет"
+  "config.spwn.label.no": "Нет",
+
+  "key.spwn.open_navigator_screen": "Открыть окно навигатора"
 }
