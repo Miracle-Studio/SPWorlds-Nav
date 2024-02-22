@@ -1,21 +1,33 @@
 {
-  "hud.spwn.spawn": "Спавн",
-  "hud.spwn.red": "Красная",
-  "hud.spwn.green": "Зеленая",
-  "hud.spwn.yellow": "Желтая",
-  "hud.spwn.cyan": "Голубая",
+  "yacl3.config.spwn:config.category.main": "Главное",
+  "yacl3.config.spwn:config.category.visual": "Визуал",
 
-  "hud.spwn.blue": "Синяя",
+  "yacl3.config.spwn:config.category.visual.group.navbar": "Отображение",
+  "yacl3.config.spwn:config.category.visual.group.red": "Красная ветка",
+  "yacl3.config.spwn:config.category.visual.group.green": "Зеленая ветка",
+  "yacl3.config.spwn:config.category.visual.group.yellow": "Желтая ветка",
+  "yacl3.config.spwn:config.category.visual.group.blue": "Синяя ветка",
+  "yacl3.config.spwn:config.category.visual.group.spawn": "Спавн",
 
-  "config.spwn.category.main": "Главное",
-
-  "config.spwn.group.visual": "Визуал",
-
-  "config.spwn.visual.align.name": "Отображение",
-  "config.spwn.visual.show_spawn.name": "Отображать спавн",
-  "config.spwn.visual.show_in_overworld.name": "Отображать в верхнем мире",
-  "config.spwn.visual.show_in_end.name": "Отображать в энде",
-
-  "config.spwn.label.yes": "Да",
-  "config.spwn.label.no": "Нет"
+  "yacl3.config.spwn:config.showInOverworld": "Отображать в верхнем мире",
+  "yacl3.config.spwn:config.showInNether": "Отображать в нижнем мире",
+  "yacl3.config.spwn:config.showInEnd": "Отображать в энде",
+  "yacl3.config.spwn:config.showSpawn": "Отображать спавн",
+  "yacl3.config.spwn:config.navbarX": "Позиция по оси X (в процентах)",
+  "yacl3.config.spwn:config.navbarY": "Позиция по оси Y (в процентах)",
+  "yacl3.config.spwn:config.navbarColor": "Цвет фона",
+  "yacl3.config.spwn:config.redName": "Название",
+  "yacl3.config.spwn:config.redColor": "Цвет",
+  "yacl3.config.spwn:config.redSeparator": "Разделитель",
+  "yacl3.config.spwn:config.greenName": "Название",
+  "yacl3.config.spwn:config.greenColor": "Цвет",
+  "yacl3.config.spwn:config.greenSeparator": "Разделитель",
+  "yacl3.config.spwn:config.yellowName": "Название",
+  "yacl3.config.spwn:config.yellowColor": "Цвет",
+  "yacl3.config.spwn:config.yellowSeparator": "Разделитель",
+  "yacl3.config.spwn:config.blueName": "Название",
+  "yacl3.config.spwn:config.blueColor": "Цвет",
+  "yacl3.config.spwn:config.blueSeparator": "Разделитель",
+  "yacl3.config.spwn:config.spawnName": "Название",
+  "yacl3.config.spwn:config.spawnColor": "Цвет"
 }

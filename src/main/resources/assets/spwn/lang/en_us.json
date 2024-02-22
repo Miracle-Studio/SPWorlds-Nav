@@ -1,21 +1,33 @@
 {
-  "hud.spwn.spawn": "Spawn",
-  "hud.spwn.red": "Red",
-  "hud.spwn.green": "Green",
-  "hud.spwn.yellow": "Yellow",
-  "hud.spwn.cyan": "Cyan",
+  "yacl3.config.spwn:config.category.main": "Main",
+  "yacl3.config.spwn:config.category.visual": "Visual",
 
-  "hud.spwn.blue": "Blue",
+  "yacl3.config.spwn:config.category.visual.group.navbar": "Navbar",
+  "yacl3.config.spwn:config.category.visual.group.red": "Red thread",
+  "yacl3.config.spwn:config.category.visual.group.green": "Green thread",
+  "yacl3.config.spwn:config.category.visual.group.yellow": "Yellow thread",
+  "yacl3.config.spwn:config.category.visual.group.blue": "Blue thread",
+  "yacl3.config.spwn:config.category.visual.group.spawn": "Spawn",
 
-  "config.spwn.category.main": "Main",
-
-  "config.spwn.group.visual": "Visual",
-
-  "config.spwn.visual.align.name": "Align",
-  "config.spwn.visual.show_spawn.name": "Show spawn",
-  "config.spwn.visual.show_in_overworld.name": "Show in overworld",
-  "config.spwn.visual.show_in_end.name": "Show in end",
-
-  "config.spwn.label.yes": "Yes",
-  "config.spwn.label.no": "No"
+  "yacl3.config.spwn:config.showInOverworld": "Show in overworld",
+  "yacl3.config.spwn:config.showInNether": "Show in nether",
+  "yacl3.config.spwn:config.showInEnd": "Show in end",
+  "yacl3.config.spwn:config.showSpawn": "Show spawn",
+  "yacl3.config.spwn:config.navbarX": "Navbar X (in percentage)",
+  "yacl3.config.spwn:config.navbarY": "Navbar Y (in percentage)",
+  "yacl3.config.spwn:config.navbarColor": "Navbar color",
+  "yacl3.config.spwn:config.redName": "Display name",
+  "yacl3.config.spwn:config.redColor": "Color",
+  "yacl3.config.spwn:config.redSeparator": "Separator",
+  "yacl3.config.spwn:config.greenName": "Display name",
+  "yacl3.config.spwn:config.greenColor": "Color",
+  "yacl3.config.spwn:config.greenSeparator": "Separator",
+  "yacl3.config.spwn:config.yellowName": "Display name",
+  "yacl3.config.spwn:config.yellowColor": "Color",
+  "yacl3.config.spwn:config.yellowSeparator": "Separator",
+  "yacl3.config.spwn:config.blueName": "Display name",
+  "yacl3.config.spwn:config.blueColor": "Color",
+  "yacl3.config.spwn:config.blueSeparator": "Separator",
+  "yacl3.config.spwn:config.spawnName": "Display name",
+  "yacl3.config.spwn:config.spawnColor": "Color"
 }

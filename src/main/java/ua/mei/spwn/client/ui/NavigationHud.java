@@ -7,11 +7,16 @@ import ua.mei.spwn.client.*;
 public class NavigationHud extends FlowLayout {
     public NavigationHud() {
         super(Sizing.content(), Sizing.content(), Algorithm.VERTICAL);
+
         this.surface(SPWorldsNavComponents.BEDROCK_PANEL);
+        this.positioning(SPMath.getPositioning());
 
         this.children.add(new DynamicLabel().margins(Insets.of(2, 2, 6, 6)));
+    }
 
-        this.zIndex(-10000);
+    @Override
+    protected void updateLayout() {
+        super.updateLayout();
 
         this.positioning(SPMath.getPositioning());
     }

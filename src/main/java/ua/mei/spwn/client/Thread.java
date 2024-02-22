@@ -1,41 +1,54 @@
 package ua.mei.spwn.client;
 
 import net.minecraft.text.*;
-import net.minecraft.util.*;
+import ua.mei.spwn.config.*;
+
+import java.awt.*;
 
 public enum Thread {
-    SPAWN,
-
     RED,
     GREEN,
     YELLOW,
-    CYAN,
+    BLUE,
 
-    BLUE;
+    SPAWN;
 
-    public Text getText(double x, double z) {
+    public Color getColor() {
+        SPWorldsNavConfig config = SPWorldsNavConfig.config();
+
         return switch (this) {
-            case SPAWN -> Text.translatable("hud.spwn.spawn").formatted(Formatting.GRAY);
+            case RED -> config.redColor;
+            case GREEN -> config.greenColor;
+            case YELLOW -> config.yellowColor;
+            case BLUE -> config.blueColor;
 
-            case RED -> Text.translatable("hud.spwn.red").append(" | " + Math.round(Math.abs(z))).formatted(Formatting.RED);
-            case GREEN -> Text.translatable("hud.spwn.green").append(" | " + Math.round(Math.abs(x))).formatted(Formatting.DARK_GREEN);
-            case YELLOW -> Text.translatable("hud.spwn.yellow").append(" | " + Math.round(Math.abs(z))).formatted(Formatting.GOLD);
-            case CYAN -> Text.translatable("hud.spwn.cyan").append(" | " + Math.round(Math.abs(x))).formatted(Formatting.DARK_AQUA);
-
-            case BLUE -> Text.translatable("hud.spwn.blue").append(" | " + Math.round(Math.abs(x))).formatted(Formatting.BLUE);
+            case SPAWN -> config.spawnColor;
         };
     }
 
-    public Text getText() {
+    public String getDisplayName() {
+        SPWorldsNavConfig config = SPWorldsNavConfig.config();
+
         return switch (this) {
-            case SPAWN -> Text.translatable("hud.spwn.spawn").formatted(Formatting.GRAY);
+            case RED -> config.redName;
+            case GREEN -> config.greenName;
+            case YELLOW -> config.yellowName;
+            case BLUE -> config.blueName;
 
-            case RED -> Text.translatable("hud.spwn.red").formatted(Formatting.RED);
-            case GREEN -> Text.translatable("hud.spwn.green").formatted(Formatting.DARK_GREEN);
-            case YELLOW -> Text.translatable("hud.spwn.yellow").formatted(Formatting.GOLD);
-            case CYAN -> Text.translatable("hud.spwn.cyan").formatted(Formatting.DARK_AQUA);
+            case SPAWN -> config.spawnName;
+        };
+    }
 
-            case BLUE -> Text.translatable("hud.spwn.blue").formatted(Formatting.BLUE);
+    public Text getText(double x, double z) {
+        SPWorldsNavConfig config = SPWorldsNavConfig.config();
+
+        return switch (this) {
+            case RED -> Text.literal(String.format("%s %s %s", config.redName, config.redSeparator, Math.round(Math.abs(z)))).styled(style -> style.withColor(config.redColor.getRGB()));
+            case GREEN -> Text.literal(String.format("%s %s %s", config.greenName, config.greenSeparator, Math.round(Math.abs(x)))).styled(style -> style.withColor(config.greenColor.getRGB()));
+            case YELLOW -> Text.literal(String.format("%s %s %s", config.yellowName, config.yellowSeparator, Math.round(Math.abs(z)))).styled(style -> style.withColor(config.yellowColor.getRGB()));
+            case BLUE -> Text.literal(String.format("%s %s %s", config.blueName, config.blueSeparator, Math.round(Math.abs(x)))).styled(style -> style.withColor(config.blueColor.getRGB()));
+
+            case SPAWN -> Text.literal(config.spawnName).styled(style -> style.withColor(config.spawnColor.getRGB()));
         };
     }
 }

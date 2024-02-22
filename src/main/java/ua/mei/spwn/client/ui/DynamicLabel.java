@@ -6,10 +6,12 @@ import net.minecraft.client.network.*;
 import net.minecraft.text.*;
 import net.minecraft.world.*;
 import ua.mei.spwn.client.*;
+import ua.mei.spwn.client.Thread;
 
 public class DynamicLabel extends LabelComponent {
     public DynamicLabel() {
         super(Text.empty());
+
         this.shadow(true);
     }
 
@@ -18,21 +20,20 @@ public class DynamicLabel extends LabelComponent {
         super.update(delta, mouseX, mouseY);
 
         ClientPlayerEntity player = MinecraftClient.getInstance().player;
+
         if (player != null) {
-            double playerX = player.getX();
-            double playerZ = player.getZ();
             double x = player.getX();
             double z = player.getZ();
+
+            Thread thread = SPMath.thread(x, z, true);
 
             if (player.clientWorld.getRegistryKey() != World.NETHER) {
                 x /= 8;
                 z /= 8;
             }
 
-            Text text = SPMath.thread(playerX, playerZ).getText(x, z);
-
-            if (text != null) {
-                this.text = text;
+            if (thread != null) {
+                this.text = thread.getText(x, z);
             }
         }
 

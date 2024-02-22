@@ -3,6 +3,8 @@
   "package": "ua.mei.spwn.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "ClientPlayNetworkHandlerMixin",
+    "MessageHandlerMixin",
     "SplashTextResourceSupplierMixin"
   ],
   "injectors": {
