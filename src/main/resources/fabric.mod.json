@@ -37,10 +37,10 @@
   ],
   "depends": {
     "fabric": "*",
-    "minecraft": ">=1.20",
-    "yet_another_config_lib_v3": ">=3.2.1+1.20"
+    "minecraft": ">=1.20.4",
+    "yet_another_config_lib_v3": ">=3.3.2+1.20.4"
   },
   "suggests": {
-    "modmenu": ">=7.0.0"
+    "modmenu": ">=9.0.0"
   }
 }

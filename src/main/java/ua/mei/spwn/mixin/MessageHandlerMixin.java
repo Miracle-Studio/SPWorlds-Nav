@@ -18,7 +18,7 @@ public class MessageHandlerMixin {
         Matcher matcher = pattern.matcher(content);
 
         if (matcher.find()) {
-            message = Text.Serializer.fromJson(GsonComponentSerializer.gson().serialize(
+            message = Text.Serialization.fromJson(GsonComponentSerializer.gson().serialize(
                     message.asComponent().replaceText(builder ->
                             builder.match(pattern).replacement(SPMath.posText(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)), Integer.parseInt(matcher.group(3))))
                     )

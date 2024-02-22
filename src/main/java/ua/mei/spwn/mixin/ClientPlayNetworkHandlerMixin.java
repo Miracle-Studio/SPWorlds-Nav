@@ -8,11 +8,9 @@ import org.spongepowered.asm.mixin.injection.*;
 
 @Mixin(ClientPlayNetworkHandler.class)
 public class ClientPlayNetworkHandlerMixin {
-    @Shadow @Final private MinecraftClient client;
-
     @ModifyVariable(method = "sendChatMessage", at = @At("HEAD"), argsOnly = true)
     private String replaceContent(String content) {
-        ClientPlayerEntity player = client.player;
+        ClientPlayerEntity player = MinecraftClient.getInstance().player;
 
         if (player != null) {
             long x = Math.round(player.getX());
@@ -32,7 +30,7 @@ public class ClientPlayNetworkHandlerMixin {
 
     @ModifyVariable(method = "sendChatCommand", at = @At("HEAD"), argsOnly = true)
     private String replaceCommand(String command) {
-        ClientPlayerEntity player = client.player;
+        ClientPlayerEntity player = MinecraftClient.getInstance().player;
 
         if (player != null) {
             long x = Math.round(player.getX());
